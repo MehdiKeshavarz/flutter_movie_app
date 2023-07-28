@@ -17,6 +17,8 @@ class HomeScreen extends StatelessWidget {
             TopHeader(),
             MoveListTitle(title: 'Top 10 Movies This Week'),
             MoveList(itemCount: 6, movieCategory: 'top_movies'),
+            MoveListTitle(title: 'New Releases'),
+            MoveList(itemCount: 6, movieCategory: 'new_movies'),
           ],
         ),
       ),
