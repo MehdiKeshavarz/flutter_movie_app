@@ -20,7 +20,7 @@ class AppModalTitle extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 24),
+              padding: const EdgeInsets.symmetric(vertical: 19),
               child: Text(
                 modalTitle,
                 textAlign: TextAlign.center,
