@@ -4,7 +4,9 @@ import 'package:move_app/config/global/constant/image_route.dart';
 import 'package:move_app/config/global/utils/show_model.dart';
 import 'package:move_app/config/theme/app_theme.dart';
 
+import '../../../config/global/constant/app_static_data.dart';
 import '../../../config/theme/app_color.dart';
+import 'explore_modal_item.dart';
 
 class SearchAndFilter extends StatelessWidget {
   const SearchAndFilter({super.key});
@@ -33,17 +35,21 @@ class FilterButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => showModelApp(
-          context: context,
-          modalTitle: 'sort & filter',
-          primaryButtonTitle: 'Apply',
-          secondaryButtonTitle: 'Reset ',
-          initChildSize: 0.7,
-          minChildSize: 0.4,
-          maxChildSize: 0.9,
-          mainModalContent: const Card(
-            color: Colors.transparent,
-            elevation: 0,
-          )),
+        context: context,
+        modalTitle: 'sort & filter',
+        primaryButtonTitle: 'Apply',
+        secondaryButtonTitle: 'Reset ',
+        initChildSize: 0.7,
+        minChildSize: 0.4,
+        maxChildSize: 0.9,
+        mainModalContent: ListView.builder(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: AppStaticData.exploreModalTitles.length,
+          itemBuilder: (context, index) => ExploreModalItem(index: index),
+        ),
+      ),
       child: Container(
         height: 56,
         width: 56,

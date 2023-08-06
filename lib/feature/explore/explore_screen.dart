@@ -13,7 +13,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
   Widget build(BuildContext context) {
     return const SafeArea(
       child: CustomScrollView(
-        slivers: [SearchAndFilter()],
+        slivers: [
+          SearchAndFilter(),
+        ],
       ),
     );
   }

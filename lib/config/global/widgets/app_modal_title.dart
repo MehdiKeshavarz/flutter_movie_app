@@ -12,7 +12,7 @@ class AppModalTitle extends StatelessWidget {
     final theme = Theme.of(context);
     return SliverAppBar(
       automaticallyImplyLeading: false,
-      pinned: true,
+      pinned: false,
       backgroundColor: Colors.transparent,
       elevation: 0,
       bottom: PreferredSize(
