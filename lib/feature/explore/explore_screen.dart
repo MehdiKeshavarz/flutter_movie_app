@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:move_app/feature/explore/widgets/movies_filter.dart';
 import 'package:move_app/feature/explore/widgets/search_and_filter_widget.dart';
 
 class ExploreScreen extends StatefulWidget {
@@ -11,10 +12,13 @@ class ExploreScreen extends StatefulWidget {
 class _ExploreScreenState extends State<ExploreScreen> {
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: CustomScrollView(
         slivers: [
-          SearchAndFilter(),
+          const SearchAndFilter(),
+          SliverToBoxAdapter(
+            child: MoviesFilter(),
+          )
         ],
       ),
     );

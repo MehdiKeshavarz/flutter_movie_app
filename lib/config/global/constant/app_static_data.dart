@@ -11,7 +11,7 @@ class AppStaticData {
     'Movie',
     'US',
     'Action',
-    '2022',
+    '2023',
     'Latest Release'
   ];
 }
