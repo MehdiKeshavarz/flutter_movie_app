@@ -8,6 +8,7 @@ import 'package:move_app/feature/home/home_screen.dart';
 import 'package:move_app/feature/my_list/my_list_screen.dart';
 
 import 'config/theme/app_color.dart';
+import 'feature/download/download_screen.dart';
 
 class BaseScreen extends StatefulWidget {
   const BaseScreen({super.key});
@@ -122,6 +123,6 @@ List<Widget> _getScreen() => [
       const HomeScreen(),
       const ExploreScreen(),
       const MyListScreen(),
-      const Text('DownloadPage'),
+      const DownloadScreen(),
       const Text('ProfilePage'),
     ];
