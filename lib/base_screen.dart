@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:move_app/config/global/constant/image_route.dart';
 import 'package:move_app/feature/explore/explore_screen.dart';
 import 'package:move_app/feature/home/home_screen.dart';
+import 'package:move_app/feature/my_list/my_list_screen.dart';
 
 import 'config/theme/app_color.dart';
 
@@ -120,7 +121,7 @@ class _BaseScreenState extends State<BaseScreen> {
 List<Widget> _getScreen() => [
       const HomeScreen(),
       const ExploreScreen(),
-      const Text('MyListPage'),
+      const MyListScreen(),
       const Text('DownloadPage'),
       const Text('ProfilePage'),
     ];
