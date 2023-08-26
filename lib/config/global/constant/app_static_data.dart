@@ -1,4 +1,17 @@
+import 'image_route.dart';
+
 class AppStaticData {
+  static const List profileOptionsData = [
+    ['Edit Profile', AppImageRoute.iconProfile],
+    ['Notification', AppImageRoute.iconBell],
+    ['Download', AppImageRoute.iconDownload],
+    ['Security', AppImageRoute.iconSecurity],
+    ['Language', AppImageRoute.iconLanguage],
+    ['Dark Mode', AppImageRoute.iconEye],
+    ['Help Center', AppImageRoute.iconHelp],
+    ['Privacy policy', AppImageRoute.iconPrivacy],
+  ];
+
   static const List<String> exploreModalTitles = [
     'Categories',
     'Regions',
